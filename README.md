@@ -66,23 +66,25 @@
 
 ## 실제 수행 방식
 WSL2 활성화
-• PoewerShell(관리자 권한) 실행
-• dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart 입력
-• dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart 입력
-• 재부팅 (필수)
-• PoewerShell(관리자 권한) 실행
-• wsl 입력 : Linux용 하위 시스템에 배포가 설치 되어있지 않습니다.Ubuntu 설치
-• Microsoft Store에서 Ubuntu 22.04.3 LTS 다운WSL2 리눅스 커널 업데이트
-• https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi
-• 다운로드후 설치하여 SWL 리눅스 커널 업데이트 하기.Ubuntu 유저이름과 비밀번호 설정
-• Ubuntu 22.04.3 LTS를 실행하여 설치가 되고 유저아이디와 비밀 번호 설정.Ubuntu 버전 확인
-• PoewerShell(관리자 권한) 실행
-• wsl -l -v 입력, version이 2
-• wsl -l -v 입력, version이 1인 경우,
+- PoewerShell(관리자 권한) 실행
+- dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart 입력
+- dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart 입력
+- 재부팅 (필수)
+- PoewerShell(관리자 권한) 실행
+- wsl 입력 : Linux용 하위 시스템에 배포가 설치 되어있지 않습니다.Ubuntu 설치
+- Microsoft Store에서 Ubuntu 22.04.3 LTS 다운WSL2 리눅스 커널 업데이트
+- https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi
+- 다운로드후 설치하여 SWL 리눅스 커널 업데이트 하기.Ubuntu 유저이름과 비밀번호 설정
+- Ubuntu 22.04.3 LTS를 실행하여 설치가 되고 유저아이디와 비밀 번호 설정.Ubuntu 버전 확인
+- PoewerShell(관리자 권한) 실행
+- wsl -l -v 입력, version이 2
+- wsl -l -v 입력, version이 1인 경우,
 
-    ◦ wsl --set-version Ubuntu-22.04 입력
-    ◦ wsl --set-default-version 2 입력Docker 설치 하기
-• https://www.docker.com/products/docker-desktop/ 본인 환경에 맞는 도커 설치
-• 옵션 'Use WSL 2 instead of Hyeper-V(recommended), 'Add shortcut to desktop'을 선택후 다운로드Docker 버전 확인
-• PoewerShell 실행
-• docker -v 입력 후 버전 확인
+-   wsl --set-version Ubuntu-22.04 입력
+-  wsl --set-default-version 2 입력Docker 설치 하기
+
+
+- https://www.docker.com/products/docker-desktop/ 본인 환경에 맞는 도커 설치
+- 옵션 'Use WSL 2 instead of Hyeper-V(recommended), 'Add shortcut to desktop'을 선택후 다운로드Docker 버전 확인
+- PoewerShell 실행
+- docker -v 입력 후 버전 확인
