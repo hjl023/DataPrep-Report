@@ -54,6 +54,11 @@
    joined_df.show()
    ```
 
+
+      ![image](https://github.com/user-attachments/assets/0fcf5166-753d-4c37-a575-4bd40085c095)
+
+
+
 ## 예외 처리
 
 각 단계에서 발생할 수 있는 예외를 처리하여 오류 메시지를 출력하고, 데이터 처리 흐름이 중단되지 않도록 합니다.
